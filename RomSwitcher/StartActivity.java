@@ -32,6 +32,13 @@ public class StartActivity extends Activity {
 			second = "Second Rom";
 			bootpartition = "/dev/block/platform/dw_mmc.0/by-name/boot";
 		}
+
+		if (device.equals("m470")) {
+			downloadlink = "https://raw.github.com/RomSwitchers/Downloadlinks/master/m470";
+			first = "Stock";
+			second = "XE";
+			bootpartition = "/dev/block/platform/sdhci-tegra.3/by-name/LNX";
+		}
 		
 		//Odin
 		if (device.equals("odin") || device.equals("C6503")) {
